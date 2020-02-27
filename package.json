@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "microfrontend-blazor-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,12 @@
     "build:blazor": "cd src/blazor && dotnet publish -c Release",
     "build:react": "cd src/react && npm run build",
     "build": "npm run build:blazor && npm run build:react && node builder.js",
+    "installAll:blazor": "cd src/blazor && dotnet restore",
     "installAll:react": "cd src/react && npm i",
-    "installAll": "npm i && npm run installAll:react"
+    "installAll": "npm i && npm run installAll:react && npm run installAll:blazor"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Lautaro Carro",
+  "license": "MIT",
   "dependencies": {
     "ncp": "^2.0.0",
     "rimraf": "^3.0.2"
