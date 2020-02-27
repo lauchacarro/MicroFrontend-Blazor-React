@@ -1,0 +1,15 @@
+﻿@inherits CompilerComponent
+    <div class="bz-container">
+        <div class="bz-block">
+            <button class="bz-btn" @onclick="Run">Run</button>
+        </div>
+        <div class="bz-block">
+            <div id="container" class="bz-compiler-input"></div>
+            
+        </div>
+        <div class="bz-block">
+            <textarea class="bz-compiler-input" @bind="Output" rows="10" cols="120"></textarea>
+        </div>
+    </div>
+
+

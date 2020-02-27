@@ -1,0 +1,24 @@
+[
+  {
+    "outputFileName": "wwwroot/css/blazorCompiler.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/blazorCompiler.min.js",
+    "inputFiles": [
+      "wwwroot/monaco-editor/min/vs/loader.js",
+      "wwwroot/js/monacoInterop.js",
+      "wwwroot/js/blazorCompilerInterop.js",
+      "wwwroot/js/removeEventListeners.js",
+      "wwwroot/js/blazorMicroFrontend.js",
+      "wwwroot/js/site.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": true
+  }
+]

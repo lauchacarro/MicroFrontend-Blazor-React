@@ -1,0 +1,19 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:blazor": "cd src/blazor && dotnet publish -c Release",
+    "build:react": "cd src/react && npm run build",
+    "build": "npm run build:blazor && npm run build:react && node builder.js",
+    "installAll:react": "cd src/react && npm i",
+    "installAll": "npm i && npm run installAll:react"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
