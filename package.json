@@ -9,7 +9,8 @@
     "build": "npm run build:blazor && npm run build:react && node builder.js",
     "installAll:blazor": "cd src/blazor && dotnet restore",
     "installAll:react": "cd src/react && npm i",
-    "installAll": "npm i && npm run installAll:react && npm run installAll:blazor"
+    "installAll": "npm i && npm run installAll:react && npm run installAll:blazor",
+    "deploy": "npm run installAll && npm run build"
   },
   "author": "Lautaro Carro",
   "license": "MIT",
