@@ -24,6 +24,7 @@ jobs:
           node-version: 10.x
 
       - run: npm run deploy
+      - run: ls build
 
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
