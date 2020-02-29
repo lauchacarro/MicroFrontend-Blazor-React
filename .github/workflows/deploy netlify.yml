@@ -24,9 +24,8 @@ jobs:
           node-version: 10.x
 
       - run: npm run deploy
-      - run: ls build/js
 
-      - name: Deploy to netlify
+      - name: Deploy to Netlify
         uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
