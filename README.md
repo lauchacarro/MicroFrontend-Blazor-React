@@ -68,7 +68,7 @@ In a future version I would like to add the following features:
 ## How To Run?
 ### React And Blazor ( / )
 
-    Production: npm run build
+    Production: npm run deploy
 
  ### Only React ( src/react )
 	
